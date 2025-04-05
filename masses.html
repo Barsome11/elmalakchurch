@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواعيد القداسات - كنيسة الملاك ميخائيل والأنبا كاراس</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- أيقونة القائمة -->
+    <div id="menu-icon">☰</div>
+
+    <!-- القائمة المخفية -->
+    <div id="menu">
+        <a href="church_website.html">الصفحة الرئيسية</a>
+        <a href="meetings.html">مواعيد الاجتماعات</a>
+        <a href="stream.html">البث المباشر</a>
+        <a href="pages.html">صفحات الكنيسة</a>
+    </div>
+
+    <header>
+        <img src="logo.png" alt="شعار الكنيسة" class="church-logo">
+        <h1 class="church-name">كنيسة الملاك ميخائيل والأنبا كاراس والقديس يوليوس الأقفهصي - أرض الفولي - الإسكندرية</h1>
+        <div class="priest-container">تحت رعاية أبونا/ لوكاس جرجس</div>
+    </header>
+
+    <section id="masses">
+        <h2>مواعيد القداسات</h2>
+        <table>
+            <tr><th>اليوم</th><th>التوقيت</th></tr>
+            <tr><td>الأحد</td><td>8:00 - 11:00</td></tr>
+            <tr><td>الإثنين</td><td>7:00 - 9:00</td></tr>
+            <tr><td>الثلاثاء</td><td>1:00 - 3:00</td></tr>
+            <tr><td>الأربعاء</td><td>3:00 - 5:00</td></tr>
+            <tr><td>الخميس</td><td>1:00 - 3:00</td></tr>
+            <tr><td>الجمعة</td><td>7:30 - 10:30</td></tr>
+        </table>
+    </section>
+
+    <script>
+        // إظهار وإخفاء القائمة عند النقر على الأيقونة
+        document.getElementById("menu-icon").addEventListener("click", function () {
+            const menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كنيسة الملاك ميخائيل والأنبا كاراس - أرض الفولي - الإسكندرية</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- أيقونة القائمة -->
+    <div id="menu-icon">☰</div>
+
+    <!-- القائمة المخفية -->
+    <div id="menu">
+        <a href="church_website.html">الصفحة الرئيسية</a>
+        <a href="masses.html">مواعيد القداسات</a>
+        <a href="meetings.html">مواعيد الاجتماعات</a>
+        <a href="stream.html">البث المباشر</a>
+    </div>
+
+    <header>
+        <img src="logo.png" alt="شعار الكنيسة" class="church-logo">
+        <h1 class="church-name">كنيسة الملاك ميخائيل والأنبا كاراس والقديس يوليوس الأقفهصي - أرض الفولي - الإسكندرية</h1>
+        <div class="priest-container">تحت رعاية أبونا/ لوكاس جرجس</div>
+    </header>
+
+    <section id="contact">
+        <h2>طرق التواصل</h2>
+        <p><a href="https://maps.app.goo.gl/me7h9E4Ro57WdMEGA" target="_blank">🔍 موقع الكنيسة على Google Maps</a></p>
+        <p><a href="https://www.youtube.com/channel/UCSmBMMAW7LmDKmW9BParx1A" target="_blank">📺 قناة اليوتيوب</a></p>
+        <p><a href="https://www.facebook.com/share/1XBk9BEmAN/" target="_blank">📘 صفحة الفيسبوك</a></p>
+    </section>
+
+    <script>
+        // إظهار وإخفاء القائمة عند النقر على الأيقونة
+        document.getElementById("menu-icon").addEventListener("click", function () {
+            const menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كنيسة الملاك ميخائيل والأنبا كاراس - أرض الفولي - الإسكندرية</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="description" content="الموقع الرسمي لكنيسة الملاك ميخائيل والأنبا كاراس - أرض الفولي - الإسكندرية. مواعيد القداسات والاجتماعات وطرق التواصل." />
+    <meta name="keywords" content="كنيسة, الملاك ميخائيل, الأنبا كاراس, أرض الفولي, الإسكندرية, قداسات, اجتماعات, أبونا لوكاس جرجس" />
+    <meta name="author" content="Barsome Moimen , Karas Rafeek" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- أيقونة القائمة -->
+    <div id="menu-icon">☰</div>
+
+    <!-- القائمة المخفية -->
+    <div id="menu">
+        <a href="church_website.html">الصفحة الرئيسية</a>
+        <a href="masses.html">مواعيد القداسات</a>
+        <a href="meetings.html">مواعيد الاجتماعات</a>
+        <a href="stream.html">البث المباشر</a>
+        <a href="pages.html">صفحات الكنيسة</a>
+    </div>
+
+    <header>
+        <img src="logo.png" alt="شعار الكنيسة" class="church-logo">
+        <h1 class="church-name">كنيسة الملاك ميخائيل والأنبا كاراس والقديس يوليوس الأقفهصي - أرض الفولي - الإسكندرية</h1>
+        <div class="priest-container">تحت رعاية أبونا/ لوكاس جرجس</div>
+    </header>
+
+    <!-- رسالة الترحيب -->
+    <section id="welcome-message">
+        <h2>لأَنَّ بَيْتِي بَيْتَ الصَّلاَةِ يُدْعَى لِكُلِّ الشُّعُوبِ ( إشعياء ٥٦ : ٧ )</h2>
+    </section>
+
+    <!-- قسم التعليمات -->
+    <section id="instructions">
+        <h2>التعليمات</h2>
+        <ul>
+            <li>يرجى الالتزام بمواعيد القداسات والاجتماعات.</li>
+            <li>للتواصل مع الكنيسة، يمكنكم زيارة صفحة <a href="pages.html">طرق التواصل</a>.</li>
+            <li>تابعوا البث المباشر للقداسات والاجتماعات من خلال صفحة <a href="stream.html">البث المباشر</a>.</li>
+        </ul>
+    </section>
+
+    <script>
+        // إظهار وإخفاء القائمة عند النقر على الأيقونة
+        document.getElementById("menu-icon").addEventListener("click", function () {
+            const menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
